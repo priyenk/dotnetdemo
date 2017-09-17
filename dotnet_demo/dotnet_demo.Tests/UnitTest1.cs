@@ -1,14 +1,16 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace dotnet_demo.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTest1
     {
-        [TestMethod]
+        [Test]
         public void TestMethod1()
         {
+            string test = "test";
+            Assert.AreEqual(test, "test");
         }
     }
 }
